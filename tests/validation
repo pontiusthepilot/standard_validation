@@ -1,0 +1,877 @@
+http://localhost/cromwell/public/endpoints/customer/get.php?id=1
+
+==================================================================
+
+http://localhost/cromwell/public/endpoints/customer/post.php
+
+Content-Type      application/json
+
+1. Invalid (Empty Fields)
+=========================
+
+{
+}
+
+{
+    "forenames": "",
+    "surname": "",
+    "title": "",
+    "date_of_birth": "",
+    "mobile_number": "",
+    "phone_number": "",
+    "email_address": "",
+    "password": ""
+}
+
+{
+    "forenames": "",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": ""
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+2. Invalid values
+=================
+
+2.1 Invalid Forenames
+=====================
+
+{
+    "forenames": "123456",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "!"£$%^",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger3",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger, Philip",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger.Philip",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcroger.com",
+    "password": "password"
+}
+
+2.2 Invalid Surames
+===================
+
+{
+    "forenames": "Roger",
+    "surname": "!"£$%^",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "123456",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "William Henry",
+    "surname": "Gates, 3rd",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+2.3 Invalid Title
+=================
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "1",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "!*",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mr5",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mrs(",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mr5",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "George VI",
+    "surname": "Mountbatten",
+    "title": "HM King,
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "roger@mcroger.com",
+    "password": "password"
+}
+
+Invalid Date of date_of_birth
+=============================
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "7th October 1960",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "7 10 1960",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "7 10 1960",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "7/10/1960",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "7-10-1960",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "7.10.1960",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+Invalid mobile Number.
+======================
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "7711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "+7711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "+07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 69339",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "+44 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "01332 360832",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "mobile number",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+Invalid phone numbers
+=====================
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 36083",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "phone number",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "phone 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+Invalid email_addres
+====================
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": " darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com ",
+    "password": "password"
+}
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": ".darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "d'arcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcymcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger",
+    "password": "password"
+}
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "@mcroger.com",
+    "password": "password"
+}
+
+Valid forenames.
+================
+
+{
+    "forenames": "d'Arcy",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "O'Reily",
+    "surname": "Westwood",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "+44 (0)7711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "oreiley@westwood.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Mary Ellen",
+    "surname": "Westwood",
+    "title": "Mrs",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "+44 7711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "maryellen@westwood.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Mary-Sue",
+    "surname": "Westwood",
+    "title": "Mrs",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "mary-sue@westwood.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger Philip",
+    "surname": "McRoger",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "roger-philip@mcroger.com",
+    "password": "password"
+}
+
+Valid Surnames
+==============
+
+{
+    "forenames": "Roger",
+    "surname": "O'Flanigan",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "Dombrain-Dann",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Roger",
+    "surname": "d'Ombrain-d'Ann",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "William Henry",
+    "surname": "Gates III",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Martin Luther",
+    "surname": "King Jr",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "darcy@mcroger.com",
+    "password": "password"
+}
+
+Valid title
+===========
+
+{
+    "forenames": "Roger",
+    "surname": "McRoger",
+    "title": "Sgt",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "roger@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Bernard",
+    "surname": "Montgomery",
+    "title": "Lt.Gen.",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "roger@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Justin Portal",
+    "surname": "Welby",
+    "title": "Very Revd.",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "roger@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "William",
+    "surname": "Cambridge",
+    "title": "HRH Prince",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "roger@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Catherine",
+    "surname": "Cambridge",
+    "title": "HRH Princess",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "roger@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "Elizabeth",
+    "surname": "Windsor",
+    "title": "HM Queen",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "roger@mcroger.com",
+    "password": "password"
+}
+
+{
+    "forenames": "George VI",
+    "surname": "Mountbatten",
+    "title": "HM King",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "roger@mcroger.com",
+    "password": "password"
+}
+
+Valid date_of_birth
+===================
+
+Tested with Valid Forenames.
+
+Valid email addresses
+=====================
+
+Tested with Valid Forenames.
+
+Valid phone numbers
+===================
+
+Tested with Valid Forenames.
+
+===================================================================
+
+http://localhost/cromwell/app/api/endpoints/customer/put.php
+
+Content-Type      application/json
+
+{
+    "id": 1,
+    "forenames": "Arthur",
+    "surname": "McArthur",
+    "title": "Mr",
+    "date_of_birth": "1960-10-07",
+    "mobile_number": "07711 693398",
+    "phone_number": "01332 360832",
+    "email_address": "martin@mcfartin.com",
+    "password": "password"
+}
+
+===================================================================
+
+http://localhost/cromwell/app/api/endpoints/customer/delete.php
+
+Content-Type      application/json
+
+{
+    "id": 4,
+}
+
+===================================================================
+
+http://localhost/cromwell/app/api/endpoints/address/get.php?id=1
+
+===================================================================
+
+http://localhost/cromwell/app/api/endpoints/address/post.php
+
+Content-Type      application/json
+
+{
+    "contact_id": "1",
+    "contact_name": "Erwin Rommel",
+    "business_name": "Afrika Korps",
+    "address_line1": "Afrika Corps HQ",
+    "address_line2": "22 Brothel St",
+    "mobile_number": "Tobruk",
+    "county": "Tobruk",
+    "country": "LBY",
+    "postcode": "TB1 1LB",
+    "address_type": "A"
+}
+
+===================================================================
+
+http://localhost/cromwell/app/api/endpoints/address/put.php
+
+Content-Type      application/json
+
+{
+    "contact_id": "1",
+    "contact_name": "Johannes Erwin Eugen Rommel",
+    "business_name": "Afrika Korps",
+    "address_line1": "Afrika Corps HQ",
+    "address_line2": "22 Brothel St",
+    "mobile_number": "Tobruk",
+    "county": "Tobruk",
+    "country": "LBY",
+    "postcode": "TB1 1LB",
+    "address_type": "A"
+}
+
+===================================================================
+
+http://localhost/cromwell/app/api/endpoints/address/delete.php
+
+Content-Type      application/json
+
+{
+    "id": 2,
+}
