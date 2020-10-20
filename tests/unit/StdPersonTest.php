@@ -769,15 +769,35 @@ class StdPersonTest extends TestCase
         );
     }
 
-    // public function testValidateDateOfBirth_ReturnsPleaseEnterAValidDate_GivenInvalidDay()
-    // {
-    //     $person = new StdPerson;
+    public function testValidateDateOfBirth_ReturnsPleaseEnterAValidDate_GivenInvalidDay()
+    {
+        $person = new StdPerson;
 
-    //     $this->assertEquals(
-    //         'Please enter a valid date',
-    //         $person->validateDateOfBirth("1960-10-32") //Needs fixing. This date is nonsense
-    //     );
-    // }
+        $this->assertEquals(
+            'Please enter a valid date',
+            $person->validateDateOfBirth("1960-10-32")
+        );
+    }
+
+    public function testValidateDateOfBirth_ReturnsPleaseEnterAValidDate_GivenInValidDateInFebruary()
+    {
+        $person = new StdPerson;
+
+        $this->assertEquals(
+            'Please enter a valid date',
+            $person->validateDateOfBirth("1960-02-30")
+        );
+    }
+
+    public function testValidateDateOfBirth_ReturnsValid_GivenValidDate()
+    {
+        $person = new StdPerson;
+
+        $this->assertEquals(
+            'valid',
+            $person->validateDateOfBirth("1960-10-07")
+        );
+    }
 
     /******************************************************************************************/
     /*                                      Mobile Number                                     */

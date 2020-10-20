@@ -69,8 +69,16 @@ class StdPerson
         }
 
         if (!empty($date_of_birth)) {
-            if (!\DateTime::createFromFormat('Y-m-d', $date_of_birth)) {
+            $pattern = "/(\d{4})\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])+$/i";
+
+            $match = preg_match($pattern, $date_of_birth, $result);
+
+            if (!$match) {
                 return 'Please enter a valid date';
+            }
+            //The regex above can still return invalid dates between 28th and 31st of certain months.
+            if (!checkdate(intval($result[3]), intval($result[2]), intval($result[1]))) {
+                 return 'Please enter a valid date';
             }
         }
 
